@@ -10,10 +10,6 @@ to autobuild
 
 ```
 $ pip install watchdog
-$ watchmedo shell-command \
-              --patterns="*.rst" \
-              --ignore-pattern='_build/*' \
-              --recursive \
-              --command='make clean html'
+$ watchmedo shell-command --patterns="*.rst;*.py" --ignore-pattern='build/*' --recursive --command='make clean html'
 
 ```
