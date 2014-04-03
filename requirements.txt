@@ -1,2 +1,6 @@
 Sphinx>=1.2.2
 pygments
+watchdog
+termcolor
+requests>=2.3.0
+beautifulsoup4>=4.3.2

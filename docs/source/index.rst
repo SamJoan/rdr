@@ -11,9 +11,11 @@ Contents:
 
    purpose
    generic_version_establishment
+   wordlists
    generic_module_version_establishment
    specific_reliable_exploits
    generic_authentication
+   exploits
 
 search & index
 ==============
