@@ -1,5 +1,19 @@
-cms version establishment 
-=========================
+cms fingerprinting
+==================
+
+For fingerprinting applications, and getting a rough idea of the version of the CMS or other COTS you are
+looking at, we recommend `WhatWeb <https://github.com/urbanadventurer/WhatWeb>`_. WhatWeb is awesome and
+contains the work of loads of people. 
+
+rdr's & WhatWeb's approach in this area are complimentary, though: WhatWeb is faster and requires less human
+effort, less bandwidth, less computational overhead. The downside, though is that it is necessary to keep a
+database of hashes of files existent in all CMS's in the internet, ever.
+
+Appart from developing rdr, I plan to update WhatWeb as much as possible, because it's a great idea and looks
+really well developed, as a project.
+
+generic version establishment for a cms
+=======================================
 
 This functionality is abstract, and is not dependent on any CMS.
 
@@ -7,7 +21,7 @@ Basic usage is as follows:
 
 .. code-block:: bash
 
-    rdr ver_chk --file-online=http://example.com/license.txt --dir=~/extracted_wordpress/
+    $ rdr gve --file-online=http://example.com/license.txt --dir=~/extracted_wordpress/
 
 This command will look through the "~/extracted_wordpress/" directory and search for files same checksum as
 ``--file-online``, and, if found will output the directory(s) the file was found on.
